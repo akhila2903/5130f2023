@@ -11,9 +11,10 @@
 <body>
 
     <div class="container">
-        <h1>User information</h1>
+        <h1>Some Facts About me!</h1>
         <p>Provide some information, and we'll suggest a great travel destination for you.</p>
-        <form id="userForm">
+        <form id="userForm" action="javascript:void(0);" method="post" onsubmit="submitForm()">
+
             <!-- Existing form fields -->
 <label for="currentLocation">My Current Location:</label>
 <input type="text" id="currentLocation">
@@ -54,34 +55,33 @@
 
     <label for="placeOfBirth">My Place of Birth:</label>
     <input type="text" id="placeOfBirth" required>
-        <!-- Additional interaction: Toggle display of facts -->
-    <label for="showFacts">Show Additional Facts:</label>
-    <input type="checkbox" id="showFacts">
-
-        
-
-<!-- New form fields -->
-
-<label for="picture">Upload Your Picture:</label>
+    <label for="picture">Upload Your Picture:</label>
     <input type="file" id="picture" accept="image/*">
 
     <label for="resume">Upload Your Resume/CV:</label>
     <input type="file" id="resume" accept=".pdf, .doc, .docx">
+    <div id="userDetails">
+        <img id="userPicture" src="" alt="User Picture">
+        <a id="downloadResume" href="" download="resume.pdf">Download Resume</a>
+    
+    </div>
+    <button type="submit" id="Button">Submit</button>
+
+        <!-- Additional interaction: Toggle display of facts -->
+    <label for="showFacts">Show Additional Facts:</label>
+    <input type="checkbox" id="showFacts">
+    <div id="additionalFacts" style="display: none;">
+    <textarea name="Any Facts" rows="15" cols="10" id="msg"></textarea> <br><br>
+
+    <button type="submit" id="Button">Submit</button>
 
 
-</form>
+    <!-- New form fields -->
 
-<!-- Display area for uploaded picture and resume -->
-<div id="userDetails">
-    <img id="userPicture" src="" alt="User Picture">
-    <a id="downloadResume" href="" download="resume.pdf">Download Resume</a>
-
-</div>
-
-<button type="submit" id="Button">Submit</button>
     </form>
 
-
+    <a href="javascript:history.back()" class="btn btn-primary mt-3">Back</a>
+    </div>
 <script src="script.js"></script>
 </body>
 </html>

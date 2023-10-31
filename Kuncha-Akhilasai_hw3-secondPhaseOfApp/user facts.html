@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akhila Sai Kuncha</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+
+    <div class="container">
+        <h1>User information</h1>
+        <p>Provide some information, and we'll suggest a great travel destination for you.</p>
+        <form id="userForm">
+            <!-- Existing form fields -->
+<label for="currentLocation">My Current Location:</label>
+<input type="text" id="currentLocation">
+
+
+    <!-- Add more options as needed -->
+</select>
+    <label for="desiredLocation">I'd like to be in (City/Country):</label>
+        <select id="desiredLocation" required>
+            <option value="Paris">Paris</option>
+            <option value="New York">New York</option>
+            <option value="Tokyo">Tokyo</option>
+            <option value="London">London</option>
+            <option value="Rome">Rome</option>
+        </select>
+        <label for="currentResidence">Where I Live Now:</label>
+        <select id="currentResidence" required>
+            <option value="New York">New York</option>
+            <option value="Los Angeles">Los Angeles</option>
+            <option value="London">London</option>
+</select>
+
+    <!-- Add new facts about me -->
+    <label for="hobbies">Hobbies:</label>
+    <input type="text" id="hobbies">
+
+    <label for="languages">Languages Spoken:</label>
+    <input type="text" id="languages">
+
+    <label for="skills">Skills:</label>
+    <input type="text" id="skills">
+
+    <label for="education">Education:</label>
+    <input type="text" id="education">
+
+    <label for="interests">Interests:</label>
+    <input type="text" id="interests">
+
+    <label for="placeOfBirth">My Place of Birth:</label>
+    <input type="text" id="placeOfBirth" required>
+        <!-- Additional interaction: Toggle display of facts -->
+    <label for="showFacts">Show Additional Facts:</label>
+    <input type="checkbox" id="showFacts">
+
+        
+
+<!-- New form fields -->
+
+<label for="picture">Upload Your Picture:</label>
+    <input type="file" id="picture" accept="image/*">
+
+    <label for="resume">Upload Your Resume/CV:</label>
+    <input type="file" id="resume" accept=".pdf, .doc, .docx">
+
+
+</form>
+
+<!-- Display area for uploaded picture and resume -->
+<div id="userDetails">
+    <img id="userPicture" src="" alt="User Picture">
+    <a id="downloadResume" href="" download="resume.pdf">Download Resume</a>
+
+</div>
+
+<button type="submit" id="Button">Submit</button>
+    </form>
+
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+    

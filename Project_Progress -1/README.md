@@ -7,4 +7,6 @@ I used React to build components, like input fields for usernames and passwords,
 React's component-based structure and state management make it much easier to handle user interactions and data. It allowed me to create a user-friendly and interactive login-registration process.
 
 While I'm just starting to explore React, I'm excited to keep learning and using it to build even more engaging and dynamic web applications in the future.
-
+Screenshots of Login-registration :
+https://github.com/akhila2903/5130f2023/blob/main/Project_Progress%20-1/Screenshots/Login%20screenshot.png
+https://github.com/akhila2903/5130f2023/blob/main/Project_Progress%20-1/Screenshots/Register%20screenshot.png

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation Form</title>
+    <style>
+        
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f7f7f7;
+        padding: 20px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .wrapper {
+        max-width: 400px;
+        background: #fff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+    }
+
+    .validation-form {
+        margin: 20px 0;
+    }
+
+    .form-field {
+        margin-bottom: 15px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    .submit-btn {
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .submit-btn:hover {
+        background-color: #0056b3;
+    }
+
+    .feedback {
+        height: 20px;
+        margin-top: 5px;
+        font-size: 14px;
+    }
+
+    .error {
+        color: #d9534f;
+    }
+
+    .success {
+        color: #5cb85c;
+    }
+</style>
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Input Validation Form</h2>
+        <form id="validationForm" class="validation-form">
+            <div class="form-field">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required>
+                <div class="feedback" id="emailFeedback"></div>
+            </div>
+
+            <div class="form-field">
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone" required>
+                <div class="feedback" id="phoneFeedback"></div>
+            </div>
+
+            <div class="form-field">
+                <label for="url">Web Page URL:</label>
+                <input type="text" id="url" name="url" required>
+                <div class="feedback" id="urlFeedback"></div>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit</button>
+            <button type="reset" class="reset-btn" onclick="resetForm()">Cancel</button>
+        </form>
+    </div>
+    <script>
+        function resetForm() {
+            document.getElementById('emailFeedback').textContent = '';
+            document.getElementById('phoneFeedback').textContent = '';
+            document.getElementById('urlFeedback').textContent = '';
+        }
+
+        document.getElementById('validationForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            provideDetailedFeedback('email', 'emailFeedback');
+            provideDetailedFeedback('phone', 'phoneFeedback');
+            provideDetailedFeedback('url', 'urlFeedback');
+        });
+
+        function provideDetailedFeedback(inputType, feedbackElementId) {
+            const value = document.getElementById(inputType).value;
+            let feedbackElement = document.getElementById(feedbackElementId);
+            switch (inputType) {
+                case 'email':
+                    feedbackElement.textContent = getDetailedEmailFeedback(value);
+                    break;
+                case 'phone':
+                    feedbackElement.textContent = getDetailedPhoneFeedback(value);
+                    break;
+                case 'url':
+                    feedbackElement.textContent = getDetailedURLFeedback(value);
+                    break;
+            }
+            feedbackElement.className = feedbackElement.textContent.includes('Invalid') ? 'error' : 'success';
+        }
+
+        function getDetailedEmailFeedback(email) {
+            if (!email.includes('@')) {
+                return 'Invalid email: Missing @ symbol.';
+            } else if (!email.includes('.')) {
+                return 'Invalid email: Missing dot (.) in domain part.';
+            } else if (!/^[\w\.-]+@[\w\.-]+\.\w+$/.test(email)) {
+                return 'Invalid email: Incorrect format.';
+            }
+            return 'Email is valid.';
+        }
+
+        function getDetailedPhoneFeedback(phone) {
+            if (!/^\+?1?[-.\s]?(\(\d{3}\)|\d{3})[-.\s]?\d{3}[-.\s]?\d{4}$/.test(phone)) {
+                return 'Invalid phone number: Use +1 (XXX) XXX-XXXX format.';
+            }
+            return 'Phone number is valid.';
+        }
+
+        function getDetailedURLFeedback(url) {
+            if (!url.startsWith('http://') && !url.startsWith('https://')) {
+                return 'Invalid URL: Missing protocol (http:// or https://).';
+            } else if (!/\.\w+/.test(url)) {
+                return 'Invalid URL: Missing top-level domain (like .com or .org).';
+            } else if (!/^(https?:\/\/)?[\w\.-]+\.\w{2,}([\/\w \.-])\/?$/.test(url)) {
+                return 'Invalid URL: Incorrect format.';
+            }
+            return 'URL is valid.';
+        }
+    </script>
+</body>
+</html>

@@ -1,5 +1,33 @@
-11/20/2023
+# TravelApp
 
-This week, I did some cool stuff in our TravelApp Frontend by creating HotelImages and Finalprice components using React. First off, I implemented a HotelImages component that allows users to click on a hotel from the home page and explore all its images, providing a more detailed and visual understanding of the accommodations.It makes the app more fun and helps users get a better idea of where they might want to stay.
-Moreover, I've added the Hotel Final Price component to include factors such as check-in and check-out time duration, as well as the number of guests. Now, when users check out a hotel, the final price is tailored to their specific dates and group size, offering a more personalized and transparent cost estimation. These enhancements aim to streamline the booking process, offering users greater clarity and flexibility.
+## Getting Started
 
+To run this project on your local machine, follow these simple steps:
+
+### Prerequisites
+
+Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
+
+### Installation
+
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/your-username/your-project.git
+    ```
+
+2. **Navigate to the project directory:**
+    ```bash
+    cd your-project
+    ```
+
+3. **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+### Running the App
+
+Now that the dependencies are installed, you can run the app with the following command:
+
+```bash
+npm start

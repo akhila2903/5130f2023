@@ -1,4 +1,5 @@
-13/11/2023
+TravelApp
 
-Working on react is the one thing that i am proud of doing this week.
-I am able to create a component Home and able to use the same component to display 30 plus hotels from the api.
+This week, I did some cool stuff in our TravelApp Frontend by creating HotelImage and Finalprice components using React. First off, I implemented a HotelImage component that allows users to click on a hotel from the home page and explore all its images, providing a more detailed and visual understanding of the accommodations.It makes the app more fun and helps users get a better idea of where they might want to stay.
+Moreover, I've added the Hotel Final Price component to include factors such as check-in and check-out time duration, as well as the number of guests. Now, when users check out a hotel, the final price is tailored to their specific dates and group size, offering a more personalized and transparent cost estimation. These enhancements aim to streamline the booking process, offering users greater clarity and flexibility.
+

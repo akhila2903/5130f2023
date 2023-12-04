@@ -1,0 +1,38 @@
+.validation-message {
+    color: green;
+    font-weight: bold;
+  }
+
+  .container {
+  text-align: center;
+}
+fieldset {
+  background-color: #eeeeee;
+}
+#myForm{
+text-align: left;
+}
+h1 {
+  color: blue;
+}
+
+#currency-info, #other-info {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 10px;
+}
+  .container {
+    text-align: left;
+  }
+
+  h1 {
+      color: #4c7caf;
+  }
+
+  #location-info {
+      font-size: 1.2em;
+      color: #333;
+  }
+  body{
+    background-color: lavender;
+  }

@@ -2,8 +2,6 @@ Below is the the short Abstract of Term Paper.
 
 Title: Artificial Intelligence in Web Systems
 
-Abstarct:
-
 Abstract: Artificial intelligence (AI) has fundamentally changed how online platforms work and communicate with users. By offering individualized user experiences, AI techniques improve the functionality of websites. They can employ user behavior analysis to deliver relevant content, suggest goods or services, and even respond to real-time questions using chatbots that are driven by AI. This research explores the integration of Artificial Intelligence (AI) into web systems, addressing performance challenges and enhancing user experience. The study identifies issues such as slow loading times, inefficient content delivery, and poor user engagement in web systems. AI-driven solutions, including machine learning algorithms, natural language processing (NLP), and computer vision, are proposed to mitigate these challenges. The paper concludes by discussing prospects, ethical considerations, and the transformative impact of AI on web systems.
 
 Keywords: Artificial Intelligence, Web Technology, Machine Learning, NLP, Computer Vision.

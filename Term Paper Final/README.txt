@@ -11,5 +11,5 @@ Keywords: Artificial Intelligence, Web Technology, Machine Learning, NLP, Comput
 
 References:
 https://www.researchgate.net/publication/371721924_Artificial_Intelligence_and_the_Future_of_Web_30_Opportunities_and_Challenges_Ahead
-https://www.researchgate.net/publication/342679475_The_Application_of_Artificial_Intelligence_in_Computer_Web_Technology_in_the_Era_of_Mas
+https://www.researchgate.net/publication/342679475_The_Application_of_Artificial_Intelligence_in_Computer_Web_Technology_in_the_Era_of_Massive_Data
 https://medium.com/theymakedesign/ai-in-web-development-9a1b5f04eee

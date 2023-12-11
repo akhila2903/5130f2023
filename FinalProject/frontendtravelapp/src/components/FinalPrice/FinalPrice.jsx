@@ -23,6 +23,11 @@ export const FinalPrice = ({singleHotel}) => {
       naviagate(`/confirm-booking/stay/${_id}`);
     }
 
+    const numberOfNights =
+checkInDate && checkOutDate
+  ? (checkOutDate.getTime() - checkInDate.getTime()) / (1000 * 3600 * 24)
+  : 0;
+
     return (
     <div className="price-details-container d-flex direction-column gap shadow">
         <div className="price-rating d-flex align-center justify-space-between">
@@ -66,7 +71,7 @@ export const FinalPrice = ({singleHotel}) => {
        </div>
        <div className='price-distribution d-flex direction-column'>
         <div className='final-price d-flex align-center justify-space-between'>
-            <span className='span'>$ {price} * 2 nights</span>
+            <span className='span'>$ {price} * {numberOfNights} nights</span>
             <span className='span'>${price *2}</span>
         </div>
         <div className='final-price d-flex align-center justify-space-between'>

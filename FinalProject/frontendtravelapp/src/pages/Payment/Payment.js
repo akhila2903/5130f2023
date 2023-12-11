@@ -97,17 +97,17 @@ checkInDate && checkOutDate
               <h3>Price Details</h3>
               <div className="final-price d-flex align-center justify-space-between">
                 <span className="span">
-                  Rs. {price} x {numberOfNights} nights
+                  $. {price} x {numberOfNights} nights
                 </span>
-                <span className="span">Rs. {price} * {numberOfNights}</span>
+                <span className="span">$. {price} * {numberOfNights}</span>
               </div>
               <div className="final-price d-flex align-center justify-space-between">
                 <span className="span">Service fee</span>
-                <span className="span">Rs. 200</span>
+                <span className="span">$. 200</span>
               </div>
               <div className="final-price d-flex align-center justify-space-between">
                 <span className="span">Total</span>
-                <span className="span">Rs. {totalPayableAmount}</span>
+                <span className="span">$. {totalPayableAmount}</span>
               </div>
             </div>
           </div>
